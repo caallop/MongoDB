@@ -1,0 +1,7 @@
+
+
+1- baixamos o npm 
+(npm init) (cria o package.json)
+
+2- instalar o framework mongoose (framework é: o mcdonalds. ele faz o lnche pra vc.)
+("faciliatdor para trabalhar com o mongodb)

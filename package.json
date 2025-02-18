@@ -1,0 +1,22 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+  "description": "tutorial mongodb",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caallop/MongoDB.git"
+  },
+  "author": "Guilherme Rosa Lopes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caallop/MongoDB/issues"
+  },
+  "homepage": "https://github.com/caallop/MongoDB#re  adme",
+  "dependencies": {
+    "mongoose": "^8.10.1"
+  }
+}
