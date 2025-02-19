@@ -5,3 +5,15 @@
 
 2- instalar o framework mongoose (framework é: o mcdonalds. ele faz o lnche pra vc.)
 ("faciliatdor para trabalhar com o mongodb)
+
+3- estrutura do projeto (criar um arquivo src com um cliente.js dentro)
+
+|_ [src]
+|     \__[models]
+|            \____cliente.js    
+|
+|
+|---database.js
+|---main.js 
+  (ir ate o database e colocar suas informaçoes)
+  (aconteceu mt coisa vo tenta relatar em casa, se ficar mal escrito é pq eu to fazendo não tao fesco na cabeça)
