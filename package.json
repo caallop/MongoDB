@@ -1,22 +1,23 @@
 {
   "name": "mongodb",
   "version": "1.0.0",
-  "description": "tutorial mongodb",
+  "description": "Tutorial mongodb",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caallop/MongoDB.git"
+    "url": "git+https://github.com/professorjosedeassis/mongodb.git"
   },
-  "author": "Guilherme Rosa Lopes",
+  "author": "Professor José de Assis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/caallop/MongoDB/issues"
+    "url": "https://github.com/professorjosedeassis/mongodb/issues"
   },
-  "homepage": "https://github.com/caallop/MongoDB#re  adme",
+  "homepage": "https://github.com/professorjosedeassis/mongodb#readme",
   "dependencies": {
-    "mongoose": "^8.10.1"
+    "mongoose": "^8.10.1",
+    "string-similarity": "^4.0.4"
   }
 }
