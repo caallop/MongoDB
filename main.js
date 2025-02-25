@@ -84,6 +84,48 @@ const buscarCliente = async (nome) => {
 }
 
 
+const atualizarCliente = async (id, nomeCli, foneCli, cpfCli) => {
+    try {
+        const cliente = await clienteModel.findByIdAndUpdate(
+            id,
+            {
+                nomeCliente: nomeCli,
+                foneCliente: foneCli,
+                cpf: cpfCli
+
+
+            },
+            {
+                new: true,
+                runValidators: true
+            }
+        )
+        //retorno do banco de dados
+        if (!cliente) {
+            console.log("cliente nao encontrado")
+        } else {
+            console.log("nome do cliente alterado com sucesso")
+        }
+    } catch (error) {
+        console.log(error)
+    }
+
+}
+//exclusao de cliente
+const deletarCliente = async (id) => {
+    try {
+        const cliente = await clienteModel.findByIdAndDelete(id)
+
+
+        if (!cliente) {
+            console.log("cliente nao encontrado")
+        } else {
+            console.log("cliente excluido com sucesso")
+        }
+    } catch (error) {
+        console.log(error)
+    }
+}
 // execução da aplicação
 const app = async () => {
     await conectar()
@@ -99,7 +141,19 @@ const app = async () => {
     //await listarClientes()
 
     //CRUD- read (exemplo 2- trazer um cliente especifico)
-    await buscarCliente("mauricio")
+    //esta dando erro. (alguma coisa com o npm string similarity)
+    //await buscarCliente("jose")
+
+    //CRUD- UPDATE-- alterar os dados de um cliente
+    //ATENÇAO!!!- obrigatoriamente, o update precisa ser feita com base no ID do cliente
+
+    await atualizarCliente('67be536e58615ac864a865b7', 'o homem do bem', '42312412-666', '432.423.421-99')
+
+    //CRUD- delete - funço para excluir um cliente
+    //ATENÇAO!!!- orbigatoriamente, a exclusao é feita pelo id
+    await deletarCliente('67be536e58615ac864a865bc')
+
+    //await listarClientes()
 
 
 
